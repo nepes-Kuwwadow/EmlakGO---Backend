@@ -41,6 +41,7 @@ Route::middleware('api.auth')->group(function () {
     Route::get('/auth/me',      [AuthController::class, 'me']);
 
     // Emläk dolandyrmak
+    // 2nji commit
     Route::post('/properties',              [PropertyController::class, 'store']);
     Route::put('/properties/{property}',    [PropertyController::class, 'update']);
     Route::patch('/properties/{property}',  [PropertyController::class, 'update']);

@@ -42,6 +42,7 @@ Route::middleware('api.auth')->group(function () {
 
     // Emläk dolandyrmak
     // 2nji commit
+    // 3nji commit
     Route::post('/properties',              [PropertyController::class, 'store']);
     Route::put('/properties/{property}',    [PropertyController::class, 'update']);
     Route::patch('/properties/{property}',  [PropertyController::class, 'update']);
